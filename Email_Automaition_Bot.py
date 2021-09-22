@@ -27,9 +27,9 @@ def get_info():
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login("1901290222.swastik.patil@gmail.com", "SONU9698")
+    server.login("SENDERS_EMAIL_ADDRESS", "********")
     email = EmailMessage()
-    email['From'] = "1901290222.swastik.patil@gmail.com"
+    email['From'] = "SENDERS_EMAIL_ADDRESS"
     email['To'] = receiver
     email['Subject'] = subject
     email.set_content(message)
@@ -37,8 +37,8 @@ def send_email(receiver, subject, message):
 
 
 email_list = {
-    'sonu': 'swastik592@gmail.com',
-    'swastik': 'swastik9698@gmail.com',
+    # ADD THE KEY VALUE PAIR OF EMAIL 
+    
 }
 
 
